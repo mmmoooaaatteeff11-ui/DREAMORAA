@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!-- ============================================================
+     نَفَس — AI Mental Wellness & Dream Experience (DEMO)
+     HTML panel: paste everything below into the CodePen HTML panel
+     ============================================================ -->
+<div id="app" dir="rtl" lang="ar" data-theme="night">
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <!-- ===================== LANDING ===================== -->
+  <div id="landing" class="view">
+    <header class="l-nav" id="lNav">
+      <button class="brand" data-action="scroll" data-target="top" aria-label="نَفَس - أعلى الصفحة">
+        <span class="brand-mark"><i class="fa-solid fa-moon"></i></span><span class="brand-name">نَفَس</span>
+      </button>
+      <nav class="l-links" aria-label="أقسام الموقع">
+        <button data-action="scroll" data-target="about">عن نَفَس</button>
+        <button data-action="scroll" data-target="features">المميزات</button>
+        <button data-action="scroll" data-target="journeys">رحلات الخيال</button>
+        <button data-action="scroll" data-target="coins">العملات</button>
+        <button data-action="scroll" data-target="pricing">الاشتراك</button>
+      </nav>
+      <button class="btn btn-primary btn-sm" data-action="start"><i class="fa-solid fa-play"></i> ابدأ رحلتك</button>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <span class="chip"><i class="fa-solid fa-shield-heart"></i> مساحة آمنة • نسخة تجريبية</span>
+          <h1>خد نفس.. <span class="grad">أنت مش لوحدك</span></h1>
+          <p class="lead">مساحة آمنة تسمع فيها نفسك، ترتاح فيها من دوشة الحياة، وترجع منها أقوى.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary btn-lg" data-action="start"><i class="fa-solid fa-play"></i> ابدأ رحلتك</button>
+            <button class="btn btn-ghost btn-lg" data-action="scroll" data-target="features"><i class="fa-solid fa-compass"></i> اكتشف عالمك</button>
+          </div>
+          <p class="philosophy">«مش بنساعدك تهرب من حياتك.. بنساعدك تلاقي القوة اللي تخليك ترجع تعيشها.»</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="moon"></div>
+          <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+          <svg class="hills" viewBox="0 0 600 220" preserveAspectRatio="none">
+            <path d="M0 140 Q120 60 250 130 T520 110 T600 130 V220 H0Z" fill="rgba(47,107,255,.25)"/>
+            <path d="M0 170 Q150 100 300 165 T600 150 V220 H0Z" fill="rgba(139,92,246,.28)"/>
+            <path d="M0 200 Q200 150 380 195 T600 185 V220 H0Z" fill="rgba(5,11,31,.85)"/>
+          </svg>
+          <div class="float-card fc1 glass"><span class="typing"><i></i><i></i><i></i></span><small>أنا سامعك…</small></div>
+          <div class="float-card fc2 glass"><i class="fa-solid fa-coins"></i> +٥ Hope Coins</div>
+          <div class="float-card fc3 glass"><i class="fa-solid fa-wind"></i> شهيق.. زفير</div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section reveal" id="about">
+        <div class="section-head">
+          <span class="eyebrow">عن المنصة</span>
+          <h2>مكان تحكي فيه، وتتنفس فيه، وترجع منه لحياتك</h2>
+          <p class="muted">نَفَس منصة دعم عاطفي وتأمل بتسمعك من غير أحكام، وبتديك رحلات خيال هادية تريّحك وترجّعلك الأمل — وبعدها بتشجعك على خطوة صغيرة حقيقية في يومك. الرحلات مش بديل عن الواقع، هي استراحة قصيرة قبل ما ترجع له أقوى.</p>
+        </div>
+        <div class="quote glass">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>We don't help you escape your life. We help you find the strength to live it.</p>
+        </div>
+      </section>
+
+      <!-- FEATURES -->
+      <section class="section" id="features">
+        <div class="section-head reveal"><span class="eyebrow">المميزات</span><h2>كل اللي محتاجه في مساحة واحدة</h2></div>
+        <div class="grid cards-3">
+          <article class="card glass reveal feature"><span class="ic"><i class="fa-solid fa-comments"></i></span><h3>فضفضة من غير أحكام</h3><p>مستمع ذكي (تجريبي) بيفهم مشاعرك وبيسألك أسئلة بتساعدك تفهم نفسك — كتابة أو تسجيل صوتي.</p></article>
+          <article class="card glass reveal feature"><span class="ic"><i class="fa-solid fa-cloud-moon"></i></span><h3>رحلات خيال موجّهة</h3><p>سيناريوهات سينمائية هادية حسب حالتك: شاطئ، مدينة أحلام، مستقبلك، قوتك الداخلية.</p></article>
+          <article class="card glass reveal feature"><span class="ic"><i class="fa-solid fa-hands-praying"></i></span><h3>رفيق روحي اختياري</h3><p>آيات ودعاء وأذكار وتدبّر — لو حبيت تفعّله. ومن غير أي لوم أو ضغط.</p></article>
+          <article class="card glass reveal feature"><span class="ic"><i class="fa-solid fa-coins"></i></span><h3>Hope Coins</h3><p>مكافآت صغيرة على عادات لطيفة بتعملها لنفسك. مفيش منافسة ومفيش حساب.</p></article>
+          <article class="card glass reveal feature"><span class="ic"><i class="fa-solid fa-book-open"></i></span><h3>دفتر تأمل</h3><p>اكتب اللي حاسس بيه، وشوف رحلتك على مدار الأيام.</p></article>
+          <article class="card glass reveal feature"><span class="ic"><i class="fa-solid fa-shield-heart"></i></span><h3>أمان أولًا</h3><p>لو حسّينا إنك في خطر، بنوقف كل حاجة ونوجّهك لمساعدة حقيقية.</p></article>
+        </div>
+      </section>
+
+      <!-- EMOTIONAL WELLNESS -->
+      <section class="section split reveal" id="emotional">
+        <div>
+          <span class="eyebrow">الفضفضة</span>
+          <h2>اتكلم.. وحد يسمعك فعلًا</h2>
+          <ul class="ticks">
+            <li><i class="fa-solid fa-check"></i> بيلتقط المشاعر: حزن، وحدة، قلق، ضغط، فقدان حماس…</li>
+            <li><i class="fa-solid fa-check"></i> أسئلة متابعة بدل نصايح جاهزة</li>
+            <li><i class="fa-solid fa-check"></i> ملخص هادي وخطوة صغيرة في نهاية كل جلسة</li>
+            <li><i class="fa-solid fa-check"></i> مش معالج نفسي، ومش بيشخّص — وده مكتوب بوضوح</li>
+          </ul>
+          <button class="btn btn-primary" data-action="nav" data-page="listen"><i class="fa-solid fa-comments"></i> جرّب الفضفضة</button>
+        </div>
+        <div class="chat-preview glass" aria-hidden="true">
+          <div class="msg user"><div class="bubble">حاسس إني فاشل وكل الناس بتتقدم وأنا مكاني.</div></div>
+          <div class="msg ai"><div class="bubble">حاسس من كلامك إنك شايل ضغط كبير.. خلينا ناخد الموضوع واحدة واحدة. إيه أكتر حاجة واقفة في طريقك دلوقتي؟</div></div>
+        </div>
+      </section>
+
+      <!-- JOURNEYS -->
+      <section class="section" id="journeys">
+        <div class="section-head reveal"><span class="eyebrow">رحلات الخيال</span><h2>استراحة قصيرة.. ورجوع أقوى</h2><p class="muted">اختار الرحلة اللي تناسبك وادخلها دلوقتي.</p></div>
+        <div class="grid cards-3">
+          <button class="card glass journey-card reveal" data-action="landing-journey" data-id="beach"><span class="jc-art j-beach"></span><h3>الشاطئ الهادي</h3><p>موج وغروب وراحة.</p></button>
+          <button class="card glass journey-card reveal" data-action="landing-journey" data-id="future"><span class="jc-art j-future"></span><h3>مستقبلك الجميل</h3><p>نسختك بعد ما كملت.</p></button>
+          <button class="card glass journey-card reveal" data-action="landing-journey" data-id="city"><span class="jc-art j-city"></span><h3>مدينة الأحلام</h3><p>أنوار وشوارع هادية.</p></button>
+          <button class="card glass journey-card reveal" data-action="landing-journey" data-id="strength"><span class="jc-art j-strength"></span><h3>القوة الداخلية</h3><p>جبل وصخور وثقة.</p></button>
+          <button class="card glass journey-card reveal" data-action="landing-journey" data-id="spiritual"><span class="jc-art j-spiritual"></span><h3>سكينة روحية</h3><p>اختياري — لمن يحب.</p></button>
+          <button class="card glass journey-card reveal" data-action="landing-journey" data-id="desert"><span class="jc-art j-desert"></span><h3>ليلة الصحرا <small class="badge gold">بريميوم</small></h3><p>نجوم ونار هادية.</p></button>
+        </div>
+      </section>
+
+      <!-- SPIRITUAL -->
+      <section class="section split reveal" id="spiritual-sec">
+        <div class="glass card spirit-preview" aria-hidden="true">
+          <p class="quran-text sm">أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</p>
+          <small class="muted">الرعد: 28 (جزء من الآية)</small>
+        </div>
+        <div>
+          <span class="eyebrow">اختياري بالكامل</span>
+          <h2>رفيق روحي.. لو حابب</h2>
+          <p class="muted">آية وتدبّر يومي، أدعية من القرآن، أذكار، دفتر تدبّر، وأهداف لطيفة (ورد، قيام، تذكير صلاة). مقفول تلقائيًا — وإنت اللي تفتحه أو تقفله وقت ما تحب. ومفيش لوم أبدًا لو فاتك حاجة.</p>
+          <button class="btn btn-ghost" data-action="nav" data-page="spiritual"><i class="fa-solid fa-moon"></i> شوف القسم الروحي</button>
+        </div>
+      </section>
+
+      <!-- COINS -->
+      <section class="section" id="coins">
+        <div class="section-head reveal"><span class="eyebrow">Hope Coins</span><h2>مكافآت صغيرة على عادات لطيفة</h2><p class="muted">كل المهام اختيارية وبتسجّلها بنفسك — من غير ما تثبت لأي حد.</p></div>
+        <div class="grid cards-3">
+          <div class="card glass reveal coin-card"><i class="fa-solid fa-comments"></i><b>جلسة فضفضة</b><span class="reward">+٥</span></div>
+          <div class="card glass reveal coin-card"><i class="fa-solid fa-cloud-moon"></i><b>رحلة خيال</b><span class="reward">+٥</span></div>
+          <div class="card glass reveal coin-card"><i class="fa-solid fa-pen"></i><b>تأمل شخصي</b><span class="reward">+٥</span></div>
+          <div class="card glass reveal coin-card"><i class="fa-solid fa-book-quran"></i><b>ورد قرآن (اختياري)</b><span class="reward">+١٠</span></div>
+          <div class="card glass reveal coin-card"><i class="fa-solid fa-hands-praying"></i><b>صلاة (اختياري)</b><span class="reward">+١٠</span></div>
+          <div class="card glass reveal coin-card"><i class="fa-solid fa-glass-water"></i><b>عادة صحية</b><span class="reward">+٥</span></div>
+        </div>
+        <div class="center"><button class="btn btn-ghost coin-demo" data-action="coin-demo"><i class="fa-solid fa-coins"></i> جرّب تجمع عملة <b id="coinDemoCount">٠</b></button></div>
+      </section>
+
+      <!-- PRICING -->
+      <section class="section" id="pricing">
+        <div class="section-head reveal"><span class="eyebrow">الاشتراك</span><h2>الدعم الأساسي مجاني دايمًا</h2><p class="muted">البريميوم إضافات اختيارية — والدفع في النسخة دي <b>تجريبي (DEMO)</b> ومفيش أي مبلغ بيتسحب.</p></div>
+        <div class="grid cards-2">
+          <article class="card glass reveal plan"><h3>المجاني</h3><p class="price">٠ <small>ج.م</small></p><ul class="ticks"><li><i class="fa-solid fa-check"></i> فضفضة أساسية</li><li><i class="fa-solid fa-check"></i> ٣ رحلات خيال يوميًا</li><li><i class="fa-solid fa-check"></i> دفتر تأمل أساسي</li><li><i class="fa-solid fa-check"></i> قسم روحي اختياري</li><li><i class="fa-solid fa-check"></i> مهام ومكافآت</li></ul></article>
+          <article class="card glass reveal plan featured"><span class="badge gold">الأفضل</span><h3>بريميوم</h3><p class="price">٩٩ <small>ج.م / شهر</small></p><ul class="ticks"><li><i class="fa-solid fa-check"></i> جلسات أطول وملخصات أعمق</li><li><i class="fa-solid fa-check"></i> رحلات غير محدودة</li><li><i class="fa-solid fa-check"></i> بيئات سينمائية مميزة</li><li><i class="fa-solid fa-check"></i> دفتر تأمل متقدم + تصدير</li><li><i class="fa-solid fa-check"></i> ثيمات إضافية</li></ul><button class="btn btn-primary" data-action="nav" data-page="premium">شوف الخطط</button></article>
+        </div>
+      </section>
+
+      <section class="section final-cta reveal">
+        <h2>خد نفس.. وابدأ من هنا</h2>
+        <button class="btn btn-primary btn-lg" data-action="start"><i class="fa-solid fa-play"></i> ابدأ رحلتك</button>
+      </section>
+    </main>
+
+    <footer class="l-footer">
+      <div class="brand-line"><span class="brand-mark"><i class="fa-solid fa-moon"></i></span><b>نَفَس</b></div>
+      <p class="muted">«مش بنساعدك تهرب من حياتك.. بنساعدك تلاقي القوة اللي تخليك ترجع تعيشها.»</p>
+      <div class="foot-links">
+        <button data-action="nav" data-page="privacy">الخصوصية والأمان</button>
+        <button data-action="nav" data-page="premium">الاشتراك</button>
+        <button data-action="start">ابدأ رحلتك</button>
+      </div>
+      <p class="tiny muted">نَفَس نموذج تجريبي للدعم العاطفي والتأمل، وليس خدمة طبية أو علاجًا نفسيًا. لو إنت في خطر فوري اتصل بالطوارئ (مصر: إسعاف 123 • شرطة 122).</p>
+    </footer>
+  </div>
+
+  <!-- ===================== APP SHELL ===================== -->
+  <div id="appShell" class="view hidden">
+    <aside class="sidebar glass" aria-label="القائمة الرئيسية">
+      <button class="brand" data-action="back-landing" title="الصفحة الرئيسية للموقع"><span class="brand-mark"><i class="fa-solid fa-moon"></i></span><span class="brand-name">نَفَس</span></button>
+      <div class="side-user" id="sideUser"></div>
+      <nav class="side-nav">
+        <button data-action="nav" data-page="home" data-nav="home"><i class="fa-solid fa-house"></i><span>الرئيسية</span></button>
+        <button data-action="nav" data-page="listen" data-nav="listen"><i class="fa-solid fa-comments"></i><span>فضفضة</span></button>
+        <button data-action="nav" data-page="journey" data-nav="journey"><i class="fa-solid fa-cloud-moon"></i><span>رحلة الخيال</span></button>
+        <button data-action="nav" data-page="spiritual" data-nav="spiritual"><i class="fa-solid fa-hands-praying"></i><span>رحلتي الروحية</span></button>
+        <button data-action="nav" data-page="tasks" data-nav="tasks"><i class="fa-solid fa-coins"></i><span>المهام والمكافآت</span></button>
+        <button data-action="nav" data-page="account" data-nav="account"><i class="fa-solid fa-user"></i><span>حسابي</span></button>
+      </nav>
+      <div class="side-foot">
+        <button class="link" data-action="nav" data-page="premium"><i class="fa-solid fa-crown"></i> بريميوم</button>
+        <button class="link" data-action="nav" data-page="privacy"><i class="fa-solid fa-shield-heart"></i> الخصوصية والأمان</button>
+        <button class="link" data-action="back-landing"><i class="fa-solid fa-arrow-right-from-bracket"></i> الصفحة التعريفية</button>
+      </div>
+    </aside>
+
+    <main id="main" class="main">
+      <section class="page" id="page-home"></section>
+
+      <section class="page" id="page-listen">
+        <div class="chat-card glass">
+          <header class="chat-head">
+            <div class="ai-avatar"><i class="fa-solid fa-feather"></i></div>
+            <div class="grow"><h2>فضفضة</h2><p class="muted">مساحة سامعاك من غير أحكام</p></div>
+            <button class="icon-btn" data-action="breathe" title="تمرين تنفس" aria-label="تمرين تنفس"><i class="fa-solid fa-wind"></i></button>
+            <button class="icon-btn" data-action="end-session" title="إنهاء الجلسة" aria-label="إنهاء الجلسة"><i class="fa-solid fa-flag-checkered"></i></button>
+            <button class="icon-btn" data-action="delete-chat" title="حذف المحادثة" aria-label="حذف المحادثة"><i class="fa-solid fa-trash"></i></button>
+          </header>
+          <div id="chatLog" class="chat-log" aria-live="polite"></div>
+          <div id="quickReplies" class="quick-replies"></div>
+          <div id="recBar" class="rec-bar hidden"><span class="rec-dot"></span><span>بيسجّل…</span><b id="recTime">٠٠:٠٠</b><span class="grow"></span><button class="btn btn-sm btn-primary" data-action="rec-stop">إرسال</button><button class="btn btn-sm btn-ghost" data-action="rec-cancel">إلغاء</button></div>
+          <form id="chatForm" class="chat-form" data-submit="chat" autocomplete="off">
+            <button type="button" class="icon-btn" id="micBtn" data-action="rec-toggle" title="تسجيل صوتي" aria-label="تسجيل صوتي"><i class="fa-solid fa-microphone"></i></button>
+            <textarea id="chatInput" rows="1" placeholder="اكتب اللي في قلبك…" aria-label="رسالتك"></textarea>
+            <button type="submit" class="send-btn" aria-label="إرسال"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+          <p class="disclaimer"><i class="fa-solid fa-circle-info"></i> نَفَس مساحة دعم عاطفي تجريبية — مش بديل عن أخصائي نفسي أو طبيب، ومش بتشخّص حالات.</p>
+        </div>
+      </section>
+
+      <section class="page" id="page-journey"></section>
+      <section class="page" id="page-spiritual"></section>
+      <section class="page" id="page-tasks"></section>
+      <section class="page" id="page-account"></section>
+      <section class="page" id="page-premium"></section>
+
+      <section class="page" id="page-privacy">
+        <header class="page-head"><div><p class="eyebrow">شفافية كاملة</p><h1>الخصوصية والأمان</h1></div></header>
+        <div class="grid cards-2">
+          <article class="card glass"><h3><i class="fa-solid fa-flask"></i> نموذج تجريبي</h3><p>نَفَس نموذج أولي (Prototype) للدعم العاطفي والتأمل. مش خدمة طبية، ومش بديل عن أخصائي نفسي أو طبيب مرخّص، ومفيش تشخيص ولا وعد بعلاج.</p></article>
+          <article class="card glass"><h3><i class="fa-solid fa-hard-drive"></i> بياناتك محليًا</h3><p>المحادثات والإعدادات والعملات متخزنة في متصفحك أنت (LocalStorage) فقط. مفيش سيرفر متصل، ومش بنضمن سرية مطلقة — أي حد يستخدم نفس المتصفح ممكن يشوفها.</p></article>
+          <article class="card glass"><h3><i class="fa-solid fa-microphone"></i> الصوت اختياري</h3><p>التسجيل الصوتي بيحتاج إذنك، وبيفضل في ذاكرة الصفحة المؤقتة ومش بيتحفظ بعد التحديث. تحويل الصوت لنص بيشتغل بس لو متصفحك بيدعمه.</p></article>
+          <article class="card glass"><h3><i class="fa-solid fa-hands-praying"></i> الجانب الديني اختياري</h3><p>القسم الروحي مقفول تلقائيًا وبتفتحه بنفسك. مفيش إجبار، ومفيش لوم أو مقارنة، ومش مطلوب منك إثبات أي عبادة.</p></article>
+          <article class="card glass"><h3><i class="fa-solid fa-trash-can"></i> إنت المتحكم</h3><p>تقدر تمسح المحادثة أو تصفّر بيانات الديمو أو تحذف الحساب التجريبي في أي وقت.</p>
+            <div class="row-wrap"><button class="btn btn-ghost btn-sm" data-action="delete-chat"><i class="fa-solid fa-comment-slash"></i> امسح المحادثة</button><button class="btn btn-ghost btn-sm" data-action="reset-demo"><i class="fa-solid fa-rotate-left"></i> صفّر الديمو</button></div></article>
+          <article class="card glass safety"><h3><i class="fa-solid fa-life-ring"></i> لو إنت في خطر</h3><p>لو بتفكر تؤذي نفسك أو حد تاني، من فضلك كلّم شخص قريب منك فورًا واتصل بالطوارئ. في مصر: الإسعاف <a href="tel:123">123</a> • الشرطة <a href="tel:122">122</a>. لو إنت في بلد تانية دوّر على رقم الطوارئ المحلي. نَفَس مش بديل عن مساعدة بشرية حقيقية.</p></article>
+        </div>
+        <p class="tiny muted center">النسخة دي بتكشف عبارات الخطر بكلمات مفتاحية بسيطة وقد تفوّت حالات — ما تعتمدش عليها كوسيلة أمان.</p>
+      </section>
+    </main>
+
+    <nav class="bottom-nav glass" aria-label="التنقل">
+      <button data-action="nav" data-page="home" data-nav="home"><i class="fa-solid fa-house"></i><span>الرئيسية</span></button>
+      <button data-action="nav" data-page="listen" data-nav="listen"><i class="fa-solid fa-comments"></i><span>فضفضة</span></button>
+      <button data-action="nav" data-page="journey" data-nav="journey"><i class="fa-solid fa-cloud-moon"></i><span>الخيال</span></button>
+      <button data-action="nav" data-page="spiritual" data-nav="spiritual"><i class="fa-solid fa-hands-praying"></i><span>روحي</span></button>
+      <button data-action="nav" data-page="tasks" data-nav="tasks"><i class="fa-solid fa-coins"></i><span>المهام</span></button>
+      <button data-action="nav" data-page="account" data-nav="account"><i class="fa-solid fa-user"></i><span>حسابي</span></button>
+    </nav>
+  </div>
+
+  <!-- ===================== DREAM JOURNEY OVERLAY ===================== -->
+  <div id="journey" class="journey hidden" role="dialog" aria-modal="true" aria-label="رحلة الخيال">
+    <div class="j-scene" id="jScene"></div>
+    <div class="j-top">
+      <button class="icon-btn" data-action="j-exit" aria-label="خروج من الرحلة"><i class="fa-solid fa-xmark"></i></button>
+      <div class="j-progress" aria-hidden="true"><span id="jBar"></span></div>
+      <small id="jCount" class="muted"></small>
+      <button class="icon-btn" id="jMute" data-action="j-mute" aria-label="الصوت"><i class="fa-solid fa-volume-xmark"></i></button>
+    </div>
+    <div class="j-stage">
+      <div class="breath" id="jBreath" aria-hidden="true"></div>
+      <p id="jText" class="j-text" aria-live="polite"></p>
+    </div>
+    <div class="j-controls">
+      <button class="btn btn-ghost" id="jPrev" data-action="j-prev"><i class="fa-solid fa-chevron-right"></i> السابق</button>
+      <button class="btn btn-ghost" id="jPause" data-action="j-pause"><i class="fa-solid fa-pause"></i> إيقاف مؤقت</button>
+      <button class="btn btn-primary" id="jNext" data-action="j-next">التالي <i class="fa-solid fa-chevron-left"></i></button>
+    </div>
+    <div id="jDone" class="j-done hidden">
+      <div class="j-done-card glass">
+        <span class="ic big"><i class="fa-solid fa-sun"></i></span>
+        <h2>رجعت.. وخدت معاك هدوء</h2>
+        <p class="muted">الرحلة خلصت، وحياتك الحقيقية هي اللي مستنياك دلوقتي.</p>
+        <h3 class="q">إيه الحاجة الصغيرة اللي تقدر تعملها في حياتك الحقيقية النهارده؟</h3>
+        <div id="jActions" class="chips"></div>
+        <input id="jCustom" class="input" type="text" maxlength="80" placeholder="أو اكتب حاجة من عندك…" aria-label="خطوة من عندك">
+        <div class="row-wrap center">
+          <button class="btn btn-primary" data-action="j-commit"><i class="fa-solid fa-check"></i> هعملها</button>
+          <button class="btn btn-ghost" data-action="j-finish">كفاية كده دلوقتي</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalRoot" class="modal-root"></div>
+  <div id="toastRoot" class="toast-root" aria-live="polite"></div>
+</div>
